@@ -29,5 +29,6 @@ Andrea
 
 ## External links
 
+ * [Andrea Soto Padilla GitHub](https://github.com/asotopadilla)
  * [Andrea Soto Padilla University of Groningen page](http://www.rug.nl/staff/a.soto.padilla)
  * [Andrea Soto Padilla LinkedIn](https://www.linkedin.com/in/andreasotopadilla)
