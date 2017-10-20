@@ -45,6 +45,14 @@ Secondary requests (assuming we have good Fly ID):
 	d. Is there a non-conformist fly? (could be answered visually)
 
 
+### Videos
+
+You can find some example videos with 3 or 6 flies here: [https://goo.gl/NjxeZF](https://goo.gl/NjxeZF)
+
+The set-up of the tracker (configuration_file.ini) is already established to limit the 
+area of interest to the space where the flies are (white area) and to track the two red 
+LEDs inside the Lego piece. 
+
 ## External links
 
  * Article: [Understanding Dynamics of Information Transmission in Drosophila melanogaster Using a Statistical Modeling Framework for Longitudinal Network Data (the RSiena Package)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4835720/)
