@@ -2,8 +2,11 @@
 
 Programming project for Andrea Soto Padilla
 
+![Experiment](Experiment.png)
+
  * [Tracker](Tracker/README.md)
  * [Geldverdeling](geldverdeling.md)
+
 
 ## Projectomschrijving
 
