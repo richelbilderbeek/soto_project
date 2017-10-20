@@ -16,7 +16,6 @@ Number of flies: 1 to 6
 Set-up: FlyTracker (Python) sets fly centroid through Lukas-Kanade method. Videos contain two red LEDs that are tracked and can indicate experimental phases. Fly centroids are changed from fly to fly when one or more subjects step outside of the tracking area or when two or more flies get close to each other (less then two fly bodies distance), especially at fast speed.
 
 Request: 
-
 	a. Maintain fly ID through video
 	b. Identify if IDs were switched or lost
 	c. Identifiy which ID, when, and for how long was lost
