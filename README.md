@@ -16,6 +16,7 @@ Number of flies: 1 to 6
 Set-up: FlyTracker (Python) sets fly centroid through Lukas-Kanade method. Videos contain two red LEDs that are tracked and can indicate experimental phases. Fly centroids are changed from fly to fly when one or more subjects step outside of the tracking area or when two or more flies get close to each other (less then two fly bodies distance), especially at fast speed.
 
 Request: 
+
 	a. Maintain fly ID through video
 	b. Identify if IDs were switched or lost
 	c. Identifiy which ID, when, and for how long was lost
@@ -31,6 +32,7 @@ Number of flies: 1 to 6
 Set-up: Use tracker output - based on (x,y) location per fly per frame - on Matlab or R to determine the distance between flies and use the ID to establish interactions between flies per experimental phase.
 
 Requests:
+
 	a. Being able to change the determinant of what an experimental phase is.
 	b. Being able to adjust what a maximum distance to be part of a group is.
 	c. Being able to adjust for how long a maximum distance must be maintained 	to be considered a group
@@ -38,6 +40,7 @@ Requests:
 	e. Indicate how many flies belong to a group per phase
 
 Secondary requests (assuming we have good Fly ID):
+
 	a. Indicate if a fly moves before the others (adjustable time) per phase
 	b. Identify fly that move before others per phase and in which phase
 	c. Do flies follow the 'leader'? (could be answered visually)
