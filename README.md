@@ -58,6 +58,7 @@ LEDs inside the Lego piece.
 ## External links
 
  * Article: [Understanding Dynamics of Information Transmission in Drosophila melanogaster Using a Statistical Modeling Framework for Longitudinal Network Data (the RSiena Package)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4835720/)
+ * [OpenCV homepage](https://opencv.org/)
  * [Andrea Soto Padilla GitHub](https://github.com/asotopadilla)
  * [Andrea Soto Padilla University of Groningen page](http://www.rug.nl/staff/a.soto.padilla)
  * [Andrea Soto Padilla LinkedIn](https://www.linkedin.com/in/andreasotopadilla)

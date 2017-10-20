@@ -99,3 +99,6 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Do not put those 500 Mb movies in this GitHub
+*.mp4
