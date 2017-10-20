@@ -2,7 +2,8 @@
 
 Programming project for Andrea Soto Padilla
 
- * [geldverdeling](geldverdeling.md)
+ * [Tracker](Tracker/README.md)
+ * [Geldverdeling](geldverdeling.md)
 
 ## Projectomschrijving
 
