@@ -6,25 +6,43 @@ Programming project for Andrea Soto Padilla
 
 ## Projectomschrijving
 
-Hello,
+### 1. Fly ID
 
-Finally managed to sit with JC and we both agree that 250 is accessible for a one question project. There are two main issues that we would like to solve:
+Team: ?Jorn, Joshua, Madelief, Same
 
-1. Fly ID. The tracker we have now mixes fly identity when flies approach each other while moving fast, which complicates classifying flies.
+Goal: Improve stability of fly ID through recording.
+Number of flies: 1 to 6
 
-2. Clustering: we would like to know if flies are close to each other at an specific distance and for how long. I've found it particularly difficult to do this time series clustering process beyond single frame analysis.
+Set-up: FlyTracker (Python) sets fly centroid through Lukas-Kanade method. Videos contain two red LEDs that are tracked and can indicate experimental phases. Fly centroids are changed from fly to fly when one or more subjects step outside of the tracking area or when two or more flies get close to each other (less then two fly bodies distance), especially at fast speed.
 
-It would be great to know if your students are interested in solving these questions, if one person can take care of both, if different people would be involved, and if we could discuss an approximate time line.
+Request: 
 
-Of course, each question is one challenge.
+	a. Maintain fly ID through video
+	b. Identify if IDs were switched or lost
+	c. Identifiy which ID, when, and for how long was lost
+	d. Manual correction of switched IDs?
 
-And it all will be prepared for publication, so we would agree on how to present each collaborator.
+### 2. Calculation of distance between flies
 
-I'm back on the 12th, so we can meet that evening or the 13th to discuss details further and start as soon as we set a plan.
+Team: ?Anne, Katina, Quinten
 
+Goal: Know the interactions of flies per experimental phase.
+Number of flies: 1 to 6
 
-Thank you for your patience and help,
-Andrea
+Set-up: Use tracker output - based on (x,y) location per fly per frame - on Matlab or R to determine the distance between flies and use the ID to establish interactions between flies per experimental phase.
+
+Requests:
+	a. Being able to change the determinant of what an experimental phase is.
+	b. Being able to adjust what a maximum distance to be part of a group is.
+	c. Being able to adjust for how long a maximum distance must be maintained 	to be considered a group
+	d. Produce mean, maximum, minimum, and median distance between flies 	per experimental phase.
+	e. Indicate how many flies belong to a group per phase
+
+Secondary requests (assuming we have good Fly ID):
+	a. Indicate if a fly moves before the others (adjustable time) per phase
+	b. Identify fly that move before others per phase and in which phase
+	c. Do flies follow the 'leader'? (could be answered visually)
+	d. Is there a non-conformist fly? (could be answered visually)
 
 
 ## External links
