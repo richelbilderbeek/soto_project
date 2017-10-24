@@ -28,7 +28,7 @@ Request:
 
 ### 2. Calculation of distance between flies
 
-Team: ?Anne, Katina, Quinten
+Team: ?Anne, Katinka, Quinten
 
 Goal: Know the interactions of flies per experimental phase.
 Number of flies: 1 to 6
