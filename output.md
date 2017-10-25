@@ -1,4 +1,6 @@
-###input: 3f_1.mp4 in location /home/jorn/Desktop/videos/
+### output 
+
+input: 3f_1.mp4 in location /home/jorn/Desktop/videos/
 
 output of terminal:
   1. Start Tracking 
