@@ -61,7 +61,7 @@ Cause:
 Solution:
 
 ```
-[unknown]
+sudo pip install -U scikit-learn
 ```
 
 ## Contributers
