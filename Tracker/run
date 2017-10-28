@@ -1,5 +1,4 @@
 #!/bin/bash
 
 # Who likes remembering things anyways...
-#python main.py configuration_file.ini 3f_1.mp4
-python main.py configuration_file.ini
+python main.py config_richel.ini
