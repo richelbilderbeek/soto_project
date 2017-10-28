@@ -24,14 +24,44 @@ With the tester you can look at how the tracking performs over time. To use the 
 
 ### `ImportError: No module named scipy`
 
+Cause:
+
+```
+./run
+```
+
+Solution:
+
 ```
 sudo pip install scipy
 ```
 
 ### `ImportError: No module named cv2`
 
+Cause:
+
+```
+./run
+```
+
+Solution:
+
 ```
 sudo pip install opencv-python
+```
+
+### `ImportError: No module named sklearn.cluster`
+
+Cause:
+
+```
+./run
+```
+
+Solution:
+
+```
+[unknown]
 ```
 
 ## Contributers
