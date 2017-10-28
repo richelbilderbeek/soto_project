@@ -20,6 +20,20 @@ With the tester you can look at how the tracking performs over time. To use the 
 >> python main.py config_mouse.ini
 ```
 
+## Errors
+
+### `ImportError: No module named scipy`
+
+```
+sudo pip install scipy
+```
+
+### `ImportError: No module named cv2`
+
+```
+sudo pip install opencv-python
+```
+
 ## Contributers
 
  * Pieter Bosma
