@@ -16,7 +16,7 @@ from itertools import permutations
 from sklearn.cluster import KMeans
 
 import matplotlib.pyplot as plt
-
+import socket
 
 class Detector:
     def __init__(self, config):
@@ -67,7 +67,14 @@ class Detector:
 
         self.arena_mask = None
 
-        self.fast = cv2.FastFeatureDetector(**self.FAST_settings)
+        print(socket.gethostname())
+        if socket.gethostname() == "lubuntu":
+            print("Hey, Richel's computer is detected")
+            self.fast = cv2.FastFeatureDetector_create(**self.FAST_settings)
+        else:
+            print("Use OpenCV 2.4's version")
+            self.fast = cv2.FastFeatureDetector(**self.FAST_settings)
+
         #self.fgbg = cv2.BackgroundSubtractorMOG()
 
     def _init_bounding_box(self):
