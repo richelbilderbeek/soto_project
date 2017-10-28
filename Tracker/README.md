@@ -80,6 +80,21 @@ Solution:
 sudo pip install matplotlib
 ```
 
+### `ImportError: No module named _tkinter, please install the python-tk package`
+
+Cause:
+
+```
+./run
+```
+
+Solution:
+
+```
+sudo apt-get install python-tk
+```
+
+
 ## Contributers
 
  * Pieter Bosma
