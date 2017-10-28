@@ -6,6 +6,7 @@ import time
 import numpy as np
 import scipy as sp
 
+import os
 import csv
 import json
 
@@ -111,6 +112,8 @@ class Detector:
         """
 
         # Setup a frame reader
+        print("I am going to open file: " + self.video_folder + video_file)
+        print("File is present: " + str(os.path.isfile(self.video_folder + video_file)))
         self.camera = video.create_capture(self.video_folder+video_file)
 
         # Setup video writer
