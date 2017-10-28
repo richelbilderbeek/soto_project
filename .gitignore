@@ -101,4 +101,4 @@ ENV/
 .mypy_cache/
 
 # Do not put those 500 Mb movies in this GitHub
-*.mp4
+*.mp4*.pyc
