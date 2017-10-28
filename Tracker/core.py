@@ -123,7 +123,7 @@ class Detector:
         self.output_video = self.video_folder + video_file[:video_file.find('.')]+'_output.avi'
 
         # Setup a video writer with the size of the bounding box
-        four_cc = cv2.cv.CV_FOURCC('m', 'p', '4', 'v')
+        four_cc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
 
         self.video_writer.open(self.output_video, four_cc, 100, (self.max_xy[0]-self.min_xy[0],
                                                                  self.max_xy[1]-self.min_xy[1]), True)
