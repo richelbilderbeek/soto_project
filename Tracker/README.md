@@ -25,7 +25,7 @@ This will start the tracking for each video file listed in config.ini and runs t
 To use the program, type the following on the command line:
 
 ```
->> python main.py config.ini
+>> python main.py configuration_file.ini
 ```
 
 Or just use `./run` from the command line. `run` assumes there is a video present in the same folder.
@@ -33,11 +33,11 @@ Or just use `./run` from the command line. `run` assumes there is a video presen
 With the tester you can look at how the tracking performs over time. To use the tester, type the following on the command line:
 
 ```
->> python tester.py config.ini
+>> python tester.py configuration_file.ini
 ```
 
-- config.ini can be used to change settings and video files.
-- Also you can have multiple config files, config_mouse.ini:
+ - `configuration_file.ini` can be used to change settings and video files.
+ - Also you can have multiple config files, `config_mouse.ini`:
 
 ```
 >> python main.py config_mouse.ini
