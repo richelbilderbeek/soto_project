@@ -1,5 +1,26 @@
 # README #
 
+## Richel's guide
+
+Do
+
+```
+sudo ./install
+```
+
+to install everything.
+
+Do 
+
+```
+./run
+```
+
+to run the project. If there is a warning it cannot find you movie file, modify `configuration_file.ini`.
+
+
+## Old guid
+
 This will start the tracking for each video file listed in config.ini and runs the correction at the end.
 To use the program, type the following on the command line:
 
