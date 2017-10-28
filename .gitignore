@@ -102,3 +102,5 @@ ENV/
 
 # Do not put those 500 Mb movies in this GitHub
 *.mp4*.pyc
+*.mp4
+*.avi
