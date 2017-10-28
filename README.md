@@ -1,5 +1,9 @@
 # soto_project
 
+
+[![IRC Network](https://img.shields.io/badge/irc-%23soto_project-blue.svg "IRC Freenode")](https://webchat.freenode.net/?channels=soto_project)
+
+
 Programming project for Andrea Soto Padilla
 
 ![Experiment](Experiment.png)
