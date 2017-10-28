@@ -27,7 +27,6 @@ class Detector:
         self.visualize = json.loads(config.get('default', 'visualize'))
         self.number_of_objects = json.loads(config.get('default', 'number_of_objects'))
         self.inertia_threshold = json.loads(config.get('default', 'inertia_threshold'))
-
         self.arena_settings = json.loads(config.get('default', 'arena_settings'))
         self.led_settings = json.loads(config.get('default', 'led_settings'))
         self.lk_settings = json.loads(config.get('default', 'lk_settings'))
@@ -74,7 +73,7 @@ class Detector:
             self.fast = cv2.FastFeatureDetector_create(**self.FAST_settings)
         else:
             print("Use OpenCV 2.4's version")
-            self.fast = cv2.FastFeatureDetector(**self.FAST_settings)
+            self.fast = cv2.FastFeatureDetector_create(**self.FAST_settings)
 
         #self.fgbg = cv2.BackgroundSubtractorMOG()
 
