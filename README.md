@@ -17,7 +17,6 @@ Programming project for Andrea Soto Padilla
 
 ### 1. Fly ID
 
-Team: ?Jorn, Joshua, Madelief, Same
 
 Goal: Improve stability of fly ID through recording.
 Number of flies: 1 to 6
@@ -33,7 +32,6 @@ Request:
 
 ### 2. Calculation of distance between flies
 
-Team: ?Anne, Katinka, Quinten
 
 Goal: Know the interactions of flies per experimental phase.
 Number of flies: 1 to 6
@@ -63,6 +61,17 @@ You can find some example videos with 3 or 6 flies here: [https://goo.gl/NjxeZF]
 The set-up of the tracker (configuration_file.ini) is already established to limit the 
 area of interest to the space where the flies are (white area) and to track the two red 
 LEDs inside the Lego piece. 
+
+
+### People
+
+ * [Anne](https://github.com/annehinrichs22)
+ * [Jorn](https://github.com/jorn600)
+ * [Joshua](https://github.com/joshua260403)
+ * Madelief
+ * [Mart](https://github.com/martje127)
+ * [Rafayel](https://github.com/RafayelGardishyan)
+ * [Same](https://github.com/same-drenth)
 
 ## External links
 
