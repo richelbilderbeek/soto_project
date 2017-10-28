@@ -1,4 +1,4 @@
 #!/bin/bash
 sudo apt-get install python
-sudo pip install scipy opencv-python
+sudo pip install scipy opencv-python matplotlib
 sudo pip install -U scikit-learn

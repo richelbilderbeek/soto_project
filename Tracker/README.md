@@ -7,6 +7,8 @@ To use the program, type the following on the command line:
 >> python main.py config.ini
 ```
 
+Or just use `./run` from the command line. `run` assumes there is a video present in the same folder.
+
 With the tester you can look at how the tracking performs over time. To use the tester, type the following on the command line:
 
 ```
@@ -62,6 +64,20 @@ Solution:
 
 ```
 sudo pip install -U scikit-learn
+```
+
+### `ImportError: No module named matplotlib.pyplot`
+
+Cause:
+
+```
+./run
+```
+
+Solution:
+
+```
+sudo pip install matplotlib
 ```
 
 ## Contributers
