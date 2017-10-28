@@ -1,5 +1,7 @@
 # soto_project
 
+[![Join the chat at https://gitter.im/soto_project/Lobby](https://badges.gitter.im/soto_project/Lobby.svg)](https://gitter.im/soto_project/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 
 [![IRC Network](https://img.shields.io/badge/irc-%23soto_project-blue.svg "IRC Freenode")](https://webchat.freenode.net/?channels=soto_project)
 
