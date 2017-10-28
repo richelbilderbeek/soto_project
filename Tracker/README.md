@@ -94,6 +94,9 @@ Solution:
 sudo apt-get install python-tk
 ```
 
+### `AttributeError: 'module' object has no attribute 'FastFeatureDetector'`
+
+Hypothesis: some OpenCV feature got changed, code needs to be modified for this.
 
 ## Contributers
 
