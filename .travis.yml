@@ -14,5 +14,5 @@ script:
   - wget http://richelbilderbeek.nl/3f_1.mp4
   - ls
   - if [ -f 3f_1.mp4 ]; then echo "Present"; else echo "Absent"; fi
-  - if [ -f /home/richel/GitHubs/soto_project/Tracker/3f_1.mp4 ]; then echo "Present"; else echo "Absent"; fi
-  - ./run
+  - if [ -f /home/travis/build/richelbilderbeek/soto_project/Tracker/3f_1.mp4 ]; then echo "Present"; else echo "Absent"; fi
+  - ./run_travis
