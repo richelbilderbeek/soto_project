@@ -10,6 +10,9 @@ def main(args=None):
     if not sys.argv[1:] is None:
         args = sys.argv[1:]
 
+    print("Arguments: ")
+    print(args)
+
     config = ConfigParser.ConfigParser()
 
     result = config.read(args[0])
