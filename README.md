@@ -1,9 +1,11 @@
 # soto_project
 
-Want chat to be logged?|Then
----|---
-Yes|[![Join the chat at https://gitter.im/soto_project/Lobby](https://badges.gitter.im/soto_project/Lobby.svg)](https://gitter.im/soto_project/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-No|[![IRC Network](https://img.shields.io/badge/irc-%23soto_project-blue.svg "IRC Freenode")](https://webchat.freenode.net/?channels=soto_project)
+[![Join the chat at https://gitter.im/soto_project/Lobby](https://badges.gitter.im/soto_project/Lobby.svg)](https://gitter.im/soto_project/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+Branch|[![Travis CI logo](TravisCI.png)](https://travis-ci.org)|[![Codecov logo](Codecov.png)](https://www.codecov.io)
+---|---|---
+master|[![Build Status](https://travis-ci.org/richelbilderbeek/soto_project.svg?branch=master)](https://travis-ci.org/richelbilderbeek/soto_project) | [![codecov.io](https://codecov.io/github/richelbilderbeek/soto_project/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/soto_project?branch=master)
+develop|[![Build Status](https://travis-ci.org/richelbilderbeek/soto_project.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/soto_project) | [![codecov.io](https://codecov.io/github/richelbilderbeek/soto_project/coverage.svg?branch=develop)](https://codecov.io/github/richelbilderbeek/soto_project?branch=develop)
 
 Programming project for Andrea Soto Padilla
 
