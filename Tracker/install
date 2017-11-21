@@ -1,4 +1,4 @@
 #!/bin/bash
-sudo apt-get install python python-tk libopencv-video-dev
-sudo pip install scipy opencv-python matplotlib
-sudo pip install -U scikit-learn
+apt-get install python python-tk libopencv-video-dev
+pip install scipy opencv-python matplotlib
+pip install -U scikit-learn
