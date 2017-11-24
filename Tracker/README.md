@@ -84,7 +84,7 @@ Cause:
 Solution:
 
 ```
-sudo pip install -U scikit-learn
+sudo pip install scikit-learn
 ```
 
 ### `ImportError: No module named matplotlib.pyplot`
