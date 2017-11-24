@@ -5,7 +5,6 @@
 Branch|[![Travis CI logo](TravisCI.png)](https://travis-ci.org)|[![Codecov logo](Codecov.png)](https://www.codecov.io)
 ---|---|---
 master|[![Build Status](https://travis-ci.org/richelbilderbeek/soto_project.svg?branch=master)](https://travis-ci.org/richelbilderbeek/soto_project) | [![codecov.io](https://codecov.io/github/richelbilderbeek/soto_project/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/soto_project?branch=master)
-develop|[![Build Status](https://travis-ci.org/richelbilderbeek/soto_project.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/soto_project) | [![codecov.io](https://codecov.io/github/richelbilderbeek/soto_project/coverage.svg?branch=develop)](https://codecov.io/github/richelbilderbeek/soto_project?branch=develop)
 
 Programming project for Andrea Soto Padilla
 
@@ -74,6 +73,10 @@ cd Tracker
 sudo ./install
 ./run
 ```
+
+## What are we working on now?
+
+Click on 
 
 ### People
 
