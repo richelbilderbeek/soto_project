@@ -76,7 +76,9 @@ sudo ./install
 
 ## What are we working on now?
 
-Click on 
+Click on the Travis build badge:
+
+![Where is the error?](WhereError.png)
 
 ### People
 
