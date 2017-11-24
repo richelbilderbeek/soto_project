@@ -65,6 +65,15 @@ The set-up of the tracker (configuration_file.ini) is already established to lim
 area of interest to the space where the flies are (white area) and to track the two red 
 LEDs inside the Lego piece. 
 
+## Getting started
+
+```
+git clone https://github.com/richelbilderbeek/soto_project.git
+cd soto_project
+cd Tracker
+sudo ./install
+./run
+```
 
 ### People
 
