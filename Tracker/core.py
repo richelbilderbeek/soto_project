@@ -113,7 +113,7 @@ class Detector:
                 print "Tip: do 'wget http://richelbilderbeek.nl/3f_1.mp4' or './download_video'"
                 raise SystemExit
 
-        self.camera = video.create_capture(self.video_folder+video_file)
+        self.camera = video.create_capture(self.video_folder + video_file + ":size=600x400")
 
         # Setup video writer
         self.video_writer = cv2.VideoWriter()
