@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Download an example video
+wget http://richelbilderbeek.nl/3f_1.mp4

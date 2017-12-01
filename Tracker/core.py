@@ -114,7 +114,7 @@ class Detector:
         print "I am going to open file '" + self.video_folder + video_file + "'"
         if os.path.isfile(self.video_folder + video_file) == False:
                 print "Error: cannot find file '" + self.video_folder + video_file + "'"
-                print "Tip: do 'wget http://richelbilderbeek.nl/3f_1.mp4'"
+                print "Tip: do 'wget http://richelbilderbeek.nl/3f_1.mp4' or './download_video'"
                 raise SystemExit
 
         print("File is present: " + str(os.path.isfile(self.video_folder + video_file)))
