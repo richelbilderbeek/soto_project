@@ -86,7 +86,6 @@ Click on the Travis build badge:
  * [Jorn](https://github.com/jorn600)
  * [Joshua](https://github.com/joshua260403)
  * Madelief
- * [Mart](https://github.com/martje127)
  * [Rafayel](https://github.com/RafayelGardishyan)
  * [Same](https://github.com/same-drenth)
 
