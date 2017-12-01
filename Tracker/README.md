@@ -10,6 +10,14 @@ sudo ./install
 
 to install everything.
 
+Do
+
+```
+./download_video
+```
+
+to download the video
+
 Do 
 
 ```
@@ -141,15 +149,6 @@ works!
 
  * Pieter Bosma
  * Richel Bilderbeek
-
-## Richel's work
-
- * `install`: Linux only, installs all prerequisites
- * `run`: Linux only, one way to call the program
-
-
-
-
 
 # How to get video info?
 
