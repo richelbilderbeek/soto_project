@@ -119,6 +119,24 @@ sudo apt-get install python-tk
 
 Hypothesis: some OpenCV feature got changed, code needs to be modified for this.
 
+### `AttributeError: 'module' object has no attribute 'cv'`
+
+In this line:
+
+```
+cap.set(cv2.cv.CV_CAP_PROP_FRAME_WIDTH, w)
+```
+
+This means that `cv2` has no `cv` attribute, thus `cv2.cv` fails.
+
+With some guessing, rewriting the code to:
+
+```
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, w)
+```
+
+works!
+
 ## Contributers
 
  * Pieter Bosma
