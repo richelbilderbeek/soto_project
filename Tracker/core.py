@@ -111,7 +111,11 @@ class Detector:
         """
 
         # Setup a frame reader
-        print("I am going to open file: " + self.video_folder + video_file)
+        print "I am going to open file '" + self.video_folder + video_file + "'"
+        if os.path.isfile(self.video_folder + video_file) == False:
+                print "Error: cannot find file '" + self.video_folder + video_file + "'"
+                raise SystemExit
+
         print("File is present: " + str(os.path.isfile(self.video_folder + video_file)))
         self.camera = video.create_capture(self.video_folder+video_file)
 
