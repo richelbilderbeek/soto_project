@@ -158,8 +158,8 @@ def create_capture(source = 0, fallback = presets['chess']):
             print "Log: size in params"
             w, h = map(int, params['size'].split('x'))
             print "Log: w:" + str(w) + ", h: " + str(h)
-            cap.set(cv2.cv.CV_CAP_PROP_FRAME_WIDTH, w)
-            cap.set(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT, h)
+            cap.set(cv2.CAP_PROP_FRAME_WIDTH, w)
+            cap.set(cv2.CAP_PROP_FRAME_HEIGHT, h)
         else:
             print "Error: size not in params"
             raise SystemExit
