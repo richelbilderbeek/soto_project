@@ -152,11 +152,12 @@ def create_capture(source = 0, fallback = presets['chess']):
         try: cap = Class(**params)
         except: pass
     else:
-        print "source is not synth"
+        print "Log: source is not synth"
         cap = cv2.VideoCapture(source)
         if 'size' in params:
-            print "size in params"
+            print "Log: size in params"
             w, h = map(int, params['size'].split('x'))
+            print "Log: w:" + str(w) + ", h: " + str(h)
             cap.set(cv2.cv.CV_CAP_PROP_FRAME_WIDTH, w)
             cap.set(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT, h)
         else:
