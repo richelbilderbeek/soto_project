@@ -147,15 +147,22 @@ def create_capture(source = 0, fallback = presets['chess']):
 
     cap = None
     if source == 'synth':
+        print "source is synth"
         Class = classes.get(params.get('class', None), VideoSynthBase)
         try: cap = Class(**params)
         except: pass
     else:
+        print "source is not synth"
         cap = cv2.VideoCapture(source)
         if 'size' in params:
+            print "size in params"
             w, h = map(int, params['size'].split('x'))
             cap.set(cv2.cv.CV_CAP_PROP_FRAME_WIDTH, w)
             cap.set(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT, h)
+        else:
+            print "Error: size not in params"
+            raise SystemExit
+
     if cap is None or not cap.isOpened():
         # print 'Warning: unable to open video source: ', source
         # if fallback is not None:
