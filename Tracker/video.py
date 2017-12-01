@@ -157,9 +157,12 @@ def create_capture(source = 0, fallback = presets['chess']):
             cap.set(cv2.cv.CV_CAP_PROP_FRAME_WIDTH, w)
             cap.set(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT, h)
     if cap is None or not cap.isOpened():
-        print 'Warning: unable to open video source: ', source
-        if fallback is not None:
-            return create_capture(fallback, None)
+        # print 'Warning: unable to open video source: ', source
+        # if fallback is not None:
+        #    return create_capture(fallback, None)
+        print "Error: unable to open video source: '" + source + "'"
+        raise SystemExit
+
     return cap
 
 if __name__ == '__main__':

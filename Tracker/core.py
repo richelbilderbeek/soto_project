@@ -67,13 +67,8 @@ class Detector:
 
         self.arena_mask = None
 
-        print(socket.gethostname())
-        if socket.gethostname() == "lubuntu":
-            print("Hey, Richel's computer is detected")
-            self.fast = cv2.FastFeatureDetector_create(**self.FAST_settings)
-        else:
-            print("Use OpenCV 2.4's version")
-            self.fast = cv2.FastFeatureDetector_create(**self.FAST_settings)
+        #print(socket.gethostname())
+        self.fast = cv2.FastFeatureDetector_create(**self.FAST_settings)
 
         #self.fgbg = cv2.BackgroundSubtractorMOG()
 
@@ -111,13 +106,13 @@ class Detector:
         """
 
         # Setup a frame reader
-        print "I am going to open file '" + self.video_folder + video_file + "'"
+
+        # Check if file is present, give error if not
         if os.path.isfile(self.video_folder + video_file) == False:
                 print "Error: cannot find file '" + self.video_folder + video_file + "'"
                 print "Tip: do 'wget http://richelbilderbeek.nl/3f_1.mp4' or './download_video'"
                 raise SystemExit
 
-        print("File is present: " + str(os.path.isfile(self.video_folder + video_file)))
         self.camera = video.create_capture(self.video_folder+video_file)
 
         # Setup video writer

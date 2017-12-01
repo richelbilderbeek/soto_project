@@ -10,8 +10,8 @@ def main(args=None):
     if not sys.argv[1:] is None:
         args = sys.argv[1:]
 
-    print("Arguments: ")
-    print(args)
+    #print("Arguments: ")
+    #print(args)
 
     config = ConfigParser.ConfigParser()
 
@@ -21,7 +21,7 @@ def main(args=None):
         return 0
 
     detector = core.Detector(config)
-    print "Start Tracking"
+    # print "Start Tracking"
     detector.run()
     print "Finished Tracking"
 
