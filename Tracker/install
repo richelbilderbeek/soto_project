@@ -1,5 +1,5 @@
 #!/bin/bash
-apt-get install python python-tk libopencv-video-dev
+apt-get install python python-pip python-tk libopencv-video-dev
 
 # Python packages
 pip install scipy 
