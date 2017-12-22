@@ -1,6 +1,8 @@
 # soto_project
 
-Programming project for Andrea Soto Padilla
+Programming project for Andrea Soto Padilla.
+
+Deadline: Monday January first 8:59 in the morning.
 
 ![Experiment](Experiment.png)
 
