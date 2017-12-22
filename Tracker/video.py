@@ -163,12 +163,19 @@ def create_capture(source = 0, fallback = presets['chess']):
         else:
             print "Error: size not in params"
             raise SystemExit
-
-    if cap is None or not cap.isOpened():
+    
+    if cap is None:
         # print 'Warning: unable to open video source: ', source
         # if fallback is not None:
         #    return create_capture(fallback, None)
-        print "Error: unable to open video source: '" + source + "'"
+        print "Error: cap is None"
+        raise SystemExit
+
+    if not cap.isOpened():
+        # print 'Warning: unable to open video source: ', source
+        # if fallback is not None:
+        #    return create_capture(fallback, None)
+        print "Error: cap is not opened"
         raise SystemExit
 
     return cap
