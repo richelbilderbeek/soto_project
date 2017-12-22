@@ -382,3 +382,6 @@ Alternate group                          : 1
 ```
 
 
+```
+sudo -H pip install --upgrade pip
+```
