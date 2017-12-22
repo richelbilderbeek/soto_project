@@ -9,6 +9,6 @@ before_script:
 
 script: 
   - cd Tracker
-  - sudo ./install
+  - sudo -H ./install
   - ./download_video
   - ./run_travis
