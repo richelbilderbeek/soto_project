@@ -1,2 +1,0 @@
-#!/bin/bash
-ffmpeg -i 3f_1.mp4 -vcodec mpeg4 -acodec ac3 -ar 48000 -ab 192k 3f_1.avi
