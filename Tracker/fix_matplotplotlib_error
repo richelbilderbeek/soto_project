@@ -1,0 +1,3 @@
+#!/bin/bash
+# Run before install
+ln -s /usr/include/freetype2/ft2build.h /usr/include/

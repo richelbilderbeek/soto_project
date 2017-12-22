@@ -19,7 +19,7 @@ if cap is None:
   raise SystemExit
 
 
-if cap is None or not cap.isOpened():
+if cap.isOpened():
   # print 'Warning: unable to open video source: ', source
   # if fallback is not None:
   #    return create_capture(fallback, None)
