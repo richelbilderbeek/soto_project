@@ -135,7 +135,7 @@ def create_capture(source = 0, fallback = presets['chess']):
     '''
     source = str(source).strip()
     chunks = source.split(':')
-    # hanlde drive letter ('c:', ...)
+    # handle drive letter ('c:', ...)
     if len(chunks) > 1 and len(chunks[0]) == 1 and chunks[0].isalpha():
         chunks[1] = chunks[0] + ':' + chunks[1]
         del chunks[0]
@@ -147,19 +147,30 @@ def create_capture(source = 0, fallback = presets['chess']):
 
     cap = None
     if source == 'synth':
+        print "source is synth"
         Class = classes.get(params.get('class', None), VideoSynthBase)
         try: cap = Class(**params)
         except: pass
     else:
+        print "Log: source is not synth"
         cap = cv2.VideoCapture(source)
         if 'size' in params:
+            print "Log: size in params"
             w, h = map(int, params['size'].split('x'))
-            cap.set(cv2.cv.CV_CAP_PROP_FRAME_WIDTH, w)
-            cap.set(cv2.cv.CV_CAP_PROP_FRAME_HEIGHT, h)
+            print "Log: w:" + str(w) + ", h: " + str(h)
+            cap.set(cv2.CAP_PROP_FRAME_WIDTH, w)
+            cap.set(cv2.CAP_PROP_FRAME_HEIGHT, h)
+        else:
+            print "Error: size not in params"
+            raise SystemExit
+
     if cap is None or not cap.isOpened():
-        print 'Warning: unable to open video source: ', source
-        if fallback is not None:
-            return create_capture(fallback, None)
+        # print 'Warning: unable to open video source: ', source
+        # if fallback is not None:
+        #    return create_capture(fallback, None)
+        print "Error: unable to open video source: '" + source + "'"
+        raise SystemExit
+
     return cap
 
 if __name__ == '__main__':

@@ -1,0 +1,14 @@
+language: cpp
+compiler: gcc
+
+# Start virtual X server, from https://docs.travis-ci.com/user/gui-and-headless-browsers/
+before_script:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - sleep 3 # give xvfb some time to start
+
+script: 
+  - cd Tracker
+  - sudo -H ./install
+  - ./download_video
+  - ./run_travis

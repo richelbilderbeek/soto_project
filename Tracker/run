@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Who likes remembering things anyways...
+python main.py config_richel.ini

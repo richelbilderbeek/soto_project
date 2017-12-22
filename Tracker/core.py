@@ -6,6 +6,7 @@ import time
 import numpy as np
 import scipy as sp
 
+import os
 import csv
 import json
 
@@ -16,7 +17,7 @@ from itertools import permutations
 from sklearn.cluster import KMeans
 
 import matplotlib.pyplot as plt
-
+import socket
 
 class Detector:
     def __init__(self, config):
@@ -26,7 +27,6 @@ class Detector:
         self.visualize = json.loads(config.get('default', 'visualize'))
         self.number_of_objects = json.loads(config.get('default', 'number_of_objects'))
         self.inertia_threshold = json.loads(config.get('default', 'inertia_threshold'))
-
         self.arena_settings = json.loads(config.get('default', 'arena_settings'))
         self.led_settings = json.loads(config.get('default', 'led_settings'))
         self.lk_settings = json.loads(config.get('default', 'lk_settings'))
@@ -67,7 +67,9 @@ class Detector:
 
         self.arena_mask = None
 
-        self.fast = cv2.FastFeatureDetector(**self.FAST_settings)
+        #print(socket.gethostname())
+        self.fast = cv2.FastFeatureDetector_create(**self.FAST_settings)
+
         #self.fgbg = cv2.BackgroundSubtractorMOG()
 
     def _init_bounding_box(self):
@@ -104,7 +106,14 @@ class Detector:
         """
 
         # Setup a frame reader
-        self.camera = video.create_capture(self.video_folder+video_file)
+
+        # Check if file is present, give error if not
+        if os.path.isfile(self.video_folder + video_file) == False:
+                print "Error: cannot find file '" + self.video_folder + video_file + "'"
+                print "Tip: do 'wget http://richelbilderbeek.nl/3f_1.mp4' or './download_video'"
+                raise SystemExit
+
+        self.camera = video.create_capture(self.video_folder + video_file + ":size=1280x720")
 
         # Setup video writer
         self.video_writer = cv2.VideoWriter()
@@ -113,7 +122,7 @@ class Detector:
         self.output_video = self.video_folder + video_file[:video_file.find('.')]+'_output.avi'
 
         # Setup a video writer with the size of the bounding box
-        four_cc = cv2.cv.CV_FOURCC('m', 'p', '4', 'v')
+        four_cc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v')
 
         self.video_writer.open(self.output_video, four_cc, 100, (self.max_xy[0]-self.min_xy[0],
                                                                  self.max_xy[1]-self.min_xy[1]), True)

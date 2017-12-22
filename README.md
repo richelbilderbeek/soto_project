@@ -1,5 +1,11 @@
 # soto_project
 
+Branch|[![Travis CI logo](TravisCI.png)](https://travis-ci.org)|[![Codecov logo](Codecov.png)](https://www.codecov.io)
+---|---|---
+master|[![Build Status](https://travis-ci.org/richelbilderbeek/soto_project.svg?branch=master)](https://travis-ci.org/richelbilderbeek/soto_project) | [![codecov.io](https://codecov.io/github/richelbilderbeek/soto_project/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/soto_project?branch=master)
+
+[![Join the chat at https://gitter.im/soto_project/Lobby](https://badges.gitter.im/soto_project/Lobby.svg)](https://gitter.im/soto_project/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Programming project for Andrea Soto Padilla.
 
 Deadline: Monday January first 8:59 in the morning.
@@ -8,13 +14,13 @@ Deadline: Monday January first 8:59 in the morning.
 
  * [Tracker](Tracker/README.md)
  * [Geldverdeling](geldverdeling.md)
-
+ * [Werktijden](werktijden.md): wie werkte wanneer hoe lang?
+ * [Output](output.md)
 
 ## Projectomschrijving
 
 ### 1. Fly ID
 
-Team: ?Jorn, Joshua, Madelief, Same
 
 Goal: Improve stability of fly ID through recording.
 Number of flies: 1 to 6
@@ -30,7 +36,6 @@ Request:
 
 ### 2. Calculation of distance between flies
 
-Team: ?Anne, Katina, Quinten
 
 Goal: Know the interactions of flies per experimental phase.
 Number of flies: 1 to 6
@@ -60,6 +65,31 @@ You can find some example videos with 3 or 6 flies here: [https://goo.gl/NjxeZF]
 The set-up of the tracker (configuration_file.ini) is already established to limit the 
 area of interest to the space where the flies are (white area) and to track the two red 
 LEDs inside the Lego piece. 
+
+## Getting started
+
+```
+git clone https://github.com/richelbilderbeek/soto_project.git
+cd soto_project
+cd Tracker
+sudo ./install
+./run
+```
+
+## What are we working on now?
+
+Click on the Travis build badge:
+
+![Where is the error?](WhereError.png)
+
+### People
+
+ * [Anne](https://github.com/annehinrichs22)
+ * [Jorn](https://github.com/jorn600)
+ * [Joshua](https://github.com/joshua260403)
+ * Madelief
+ * [Rafayel](https://github.com/RafayelGardishyan)
+ * [Same](https://github.com/same-drenth)
 
 ## External links
 
