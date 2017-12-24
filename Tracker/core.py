@@ -127,7 +127,7 @@ class Detector:
         self.video_writer.open(self.output_video, four_cc, 100, (self.max_xy[0]-self.min_xy[0],
                                                                  self.max_xy[1]-self.min_xy[1]), True)
 
-        self.total_number_frames = int(self.camera.get(cv2.cv.CV_CAP_PROP_FRAME_COUNT))
+        self.total_number_frames = int(self.camera.get(cv2.CAP_PROP_FRAME_COUNT))
 
     def _init_k_means(self):
         """

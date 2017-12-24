@@ -21,7 +21,7 @@ def main(args=None):
         return 0
 
     detector = core.Detector(config)
-    # print "Start Tracking"
+    print "Start Tracking"
     detector.run()
     print "Finished Tracking"
 
